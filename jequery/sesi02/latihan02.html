@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>latihan jquery 02</title>
+</head>
+<body>
+    
+   <input type="text" id="txNAMA">
+   <button id="cmNAMA">Get Nama</button>
+
+<P class="viewNAMA">---NAMA---</P>
+
+    <script src="../jquery/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $("#cmdNAMA").on("click",function(){
+                let nama = $("txNAMA").val()
+                $("viewNAMA").html("nama")
+            })
+        })
+    </script>
+</body>
+</html>

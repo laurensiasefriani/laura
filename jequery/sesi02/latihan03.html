@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+     <h3>hitung luas persegi</h3>
+     <div>
+        panjang<input type="text" id="txPANJANG">
+        <div>
+            lebar<input type="text" id="txLEBAR">
+            <div>
+                <p class="txHASIL">hasil</p>
+            </div>
+        </div>
+            <button id="cmdHITUNG">HITUNG LUAS</button>
+     </div>
+
+
+
+    <script src="../jquery/jquery-3.7.1.min.js"></script>
+    <script>
+    $(function(){
+        $("#cmdHITUNG").on("click",function(){
+            let pj = $("#txPANJANG").val()
+            let lb = $("#txLEBAR").val()
+            let luas = pj*lb
+            let info  = "hitung luas persegi<br>panjang: "+pj+"<lb>lebar:"+lb+"<br>"
+                info += "luas = panjang X lebar<br>luas ="+pj+" X "+lb+"<br>"
+                info += "luas = "+ luas
+             $(".txHASIL").html(info)
+            })
+
+    })
+    </script>
+</body>
+</html>
